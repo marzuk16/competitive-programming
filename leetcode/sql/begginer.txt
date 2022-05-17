@@ -1,0 +1,20 @@
+Problems:
+    595. Big Countries
+Solution:
+    SELECT NAME, POPULATION, AREA FROM WORLD WHERE AREA >= 3000000 OR POPULATION >= 25000000;
+
+Problems:
+    1757. Recyclable and Low Fat Products
+Solution:
+    SELECT PRODUCT_ID FROM PRODUCTS WHERE LOW_FATS = 'Y' AND RECYCLABLE='Y';
+
+Problems:
+    584. Find Customer Referee
+Solution:
+    SELECT NAME FROM CUSTOMER WHERE REFEREE_ID<>2 OR REFEREE_ID IS NULL;
+
+Problems:
+    183. Customers Who Never Order
+Solution:
+    SELECT NAME AS CUSTOMERS FROM CUSTOMERS LEFT JOIN ORDERS ON CUSTOMERS.id=ORDERS.customerId WHERE customerID IS NULL;
+    
